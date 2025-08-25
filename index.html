@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.H.S. Khajhara</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body,html{height:100%;font-family:Arial, sans-serif;}
+
+    /* Background Video */
+    .bg-video{
+      position:fixed;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-2;
+    }
+    .overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.45);
+      z-index:-1;
+    }
+
+    /* Navbar */
+    nav{
+      position:fixed;
+      top:0;left:0;
+      width:100%;
+      background:rgba(0,0,0,0.6);
+      padding:12px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:#fff;
+      z-index:10;
+    }
+    nav .logo{font-size:1.3rem;font-weight:bold;}
+    nav ul{list-style:none;display:flex;gap:20px;}
+    nav ul li a{color:#fff;text-decoration:none;font-weight:600;}
+    nav ul li a:hover{text-decoration:underline;}
+
+    /* Content */
+    .content{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:#fff;
+      padding:80px 20px 20px;
+    }
+    .card{
+      background:rgba(255,255,255,0.1);
+      padding:25px;
+      border-radius:15px;
+      max-width:800px;
+      backdrop-filter:blur(6px);
+      box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    }
+    h1{font-size:2rem;margin-bottom:10px;}
+    p{font-size:1.1rem;line-height:1.6;}
+    footer{
+      text-align:center;
+      color:#fff;
+      padding:10px;
+      position:relative;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">GHS Khajhara</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="card">
+      <h1>Rajkiya High School Khajhara</h1>
+      <p>
+        Welcome to our official school page.<br>
+        Our students consistently perform well in board exams.<br>
+        All teachers are selected through Uttar Pradesh Public Service Commission.<br>
+        Admissions are open for Class 9 and 10.<br>
+        Join us for quality education and holistic development.
+      </p>
+    </div>
+  </div>
+
+  <footer>© 2025 GHS Khajhara</footer>
+</body>
+</html>
